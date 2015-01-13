@@ -1,0 +1,25 @@
+# Mail_TP2
+TP 2 de Méthodes Agiles Ingénierie Logicielle - Paris Dauphine
+
+USER STORIES:
+    USER STORY US01:
+        CRÉER DES CÉRÉMONIES DE CINÉMA - AUTEUR : THIERRY FRÉMAUX 
+        Créer une cérémonie de remises de prix de cinéma, contenant un nom, une date début, une date de fin, un lieu, une liste d'invités, un nombre maximum d'invités, une sélection de films en compétitions.
+        TST01 - Créer des cérémonies cohérentes, éviter les doublons.
+        TST02 - Refuser les cérémonies n'ayant pas toutes les informations.
+    Estimation de charge : 8 points
+
+    USER STORY US02:
+        GÉRER LES DEMANDES D'INVITATIONS - AUTEUR : JEAN DUJARDIN
+        Les acteurs désirant être invités à une cérémonie peut effectuer une demande avant le démarrage de la cérémonie.
+        TST03 - Lars Von Trier est déclaré personna non grata au Festival De Cannes.
+        TST04 - L'acceptation n'est pas automatique. L'organisateur du Festival seul peut décider d'accepter ou non une demande invitation.
+    Estimation de charge : 5 points
+
+    USER STORY US03:
+        GÉRER LES PRIX - AUTEUR : LEONARDO DI CAPRIO
+        Les acteurs invités à la cérémonie ont une chance de se voir décerner un prix. Il est donc important de créer le prix. On souhaite avoir l'historique de tous les gagnants de chaque prix, par année, par festival.
+        TST05 - Il ne peut y avoir qu'un seul acteur par prix, à un festival et à une année donnés.
+     Estimation de charge : 8 points
+
+ITERATIONS:
