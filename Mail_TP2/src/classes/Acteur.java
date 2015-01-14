@@ -13,6 +13,7 @@ package classes;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 
 public class Acteur {
@@ -71,6 +72,34 @@ public class Acteur {
        {
            leFilm.infoFilms();
        }
+    }
+    
+    // Méthode pour participer à une cérémonie
+    public void demanderInvitation(Ceremonie uneCeremonie)
+    {
+        // Si LVT veut participer au festival de Cannes, il n'est pas ajouté
+        if ("Von Trier".equals(this.nomActeur) && "Lars".equals(this.prenomActeur) && "Festival de Cannes".equals(uneCeremonie.getNomCeremonie()))
+        {
+            System.out.println("Vous êtes personna non grata au Festival de Cannes");
+        }
+        else
+        {
+            // On demande d'accepter la demande
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Veuillez accepter la demande en tapant oui");
+            String str = sc.nextLine();
+            
+            // Si l'invitation est accordée, on ajoute la personne
+            if (str.equals("oui"))
+            {
+                uneCeremonie.getListeActeursPresents().add(this);
+            }
+            // Sinon on l'informe
+            else
+            {
+                System.out.println("Vous n'êtes pas invité à" + uneCeremonie.getNomCeremonie());
+            }
+        }
     }
     
 }
