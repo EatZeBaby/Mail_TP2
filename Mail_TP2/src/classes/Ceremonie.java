@@ -8,7 +8,8 @@ package classes;
 /**
  *
  * @author Guimove
- */
+ * @authorbis Axel
+ */ 
 
 import java.util.List;
 import java.util.ArrayList;
@@ -30,6 +31,7 @@ public class Ceremonie {
     // Liste contenant toutes les cérémonies
     private static List<Ceremonie> listeCeremonies = new ArrayList<Ceremonie>();
     
+    //Tests Unitaires
     
     
     // Getter Setters

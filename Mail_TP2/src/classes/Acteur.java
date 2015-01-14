@@ -19,7 +19,7 @@ public class Acteur {
     
     private String prenomActeur;
     private String nomActeur;
-    private List<Film> listeFilms;
+    private ArrayList<Film> listeFilms;
 
     /**
      * Constructor for objects of class Acteur
@@ -30,7 +30,12 @@ public class Acteur {
       this.nomActeur = "Dorval";
       this.listeFilms = new ArrayList<Film>();
     }
-
+    public Acteur(String nom,String prenom)
+    {
+      this.prenomActeur = prenom;
+      this.nomActeur = nom;
+      this.listeFilms = new ArrayList<Film>();
+    }
   
      // Getter
     public String getNomActeur()

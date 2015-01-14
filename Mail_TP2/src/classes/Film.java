@@ -31,6 +31,13 @@ public class Film {
        this.budgetFilm = 4900000;
        this.listeActeurs = new ArrayList<Acteur>();
     }
+    public Film(String titre,int budget)
+    {
+       this.nomFilm = titre;
+       this.budgetFilm = budget;
+       this.listeActeurs = new ArrayList<Acteur>();
+    }
+
 
    
     public void testFixture()
